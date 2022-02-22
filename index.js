@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
-app.listen(3000, () => console.log('servidor rodando na porta 3000'))
+app.listen(3000, () => console.log("servidor rodando na porta 3000"));
 
-app.get('/atendimentos', (req, res) => res.send('você está na rota de atendimentos, e está realizando um GET'))
+app.get("/atendimentos", (req, res) => {
+  res.send("você está na rota de atendimentos, e está realizando um GET");
+});
